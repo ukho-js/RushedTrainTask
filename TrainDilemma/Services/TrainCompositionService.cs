@@ -29,7 +29,7 @@ namespace TrainDilemma.Services
         {
             if (HasCarriages())
             {
-                _train.Carriages.Prepend(carriage);
+                _train.Carriages.Insert(0, carriage);
                 _logger.LogInformation($"Added {carriage} to the left");
             }
             else
